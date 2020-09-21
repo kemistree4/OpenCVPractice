@@ -9,7 +9,7 @@ import cv2
 import os
 
 
-def video_to_frames(video, path_output_dir, count=8738):
+def video_to_frames(video, path_output_dir, count=0):
     # extract frames from a video and save to directory as 'x.png' where 
     # x is the frame index
     vidcap = cv2.VideoCapture(video)
@@ -24,4 +24,4 @@ def video_to_frames(video, path_output_dir, count=8738):
     vidcap.release()
     return count
 
-video_to_frames('/home/rikeem/Desktop/Cougar2_082519_082637.avi', '/media/rikeem/SP PHD U32/Output frames')
+video_to_frames('/home/kemistree4/Desktop/nat_light_bugs.mp4', '/media/kemistree4/SP PHD U3/Bug_pics/Nat_light_bugs')
